@@ -1,0 +1,80 @@
+/************Content Css***********/
+
+.big-container .material-title{
+	width:100%;
+	text-align:center;
+	padding-left:150px;
+}
+.big-container .material-title h2{
+	padding:30px;
+	background: #0688A4;
+	color: #fff;
+	text-align:center;
+	border-bottom: 5px solid #16F2EC;
+}
+
+.add
+{
+	text-decoration:none;
+	font-size:20px;
+	color: #0077CD;
+}
+button{
+	padding: 20px;
+	border:2px solid #16DBD6;
+	margin:20px;
+	border-radius:10px;
+	background-color: #EDEDED;
+}
+button:hover{
+	background-color:white;
+	color: #CADAF0;
+
+}
+
+
+
+
+
+/*Profile Page Css*/
+.profile{
+	margin:auto;
+	text-align:left;
+}
+
+tr,th,td{
+	padding:20px 30px 0 30px;
+	
+}
+th{	
+	font-size:18px;
+}
+.txtbox
+{
+	height:40px;
+	width:200px;
+	font-size:18px;
+	border:none;
+	border-bottom: 2px solid #76D5FA;
+	background-color : #E4F9FF;
+	padding:5px 5px;
+}
+.upDateBtn
+{
+	text-decoration:none;
+	font-size:17px;
+	font-weight:bold;
+	border-radius:5px;
+	background-color : #E4F9FF;
+	border:2px solid #76D5FA;
+	padding:5px;
+	width:200px;
+}
+
+
+
+
+
+
+
+

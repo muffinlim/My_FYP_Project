@@ -1,0 +1,184 @@
+/************Content Css***********/
+.big-container .material-title{
+	width:100%;
+	margin-left:150px;
+	text-align:center;
+}
+.big-container .material-title h2{
+	padding:30px;
+	text-align:center;
+	background-color : #B8B8B8;
+	border-bottom: 3px solid #676C6C;
+	
+}
+
+
+
+
+/************Table Course Css***********/
+.showcourse
+{
+	width:90%;
+	border : 5px double #727272;
+	margin:50px 0 10px 50px;
+	border-radius:20px;
+
+}
+
+.showcourse tr td{
+	vertical-align:center;
+	height:100px;
+}
+.showcourse tr td:hover
+{
+	border-radius:15px;
+	background-color:#C4BF96;
+}
+
+.courseName
+{
+	text-decoration:none;
+	font-size:30px;
+	padding-left:20px;
+	color:#6C7E94;
+	font-weight:bold;
+
+}
+
+
+/************Enter Code Css***********/
+.codeBox
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	border:none;
+	border-bottom: 2px solid #676C6C;
+	background-color : #DAE3E3;
+	padding:5px 5px;
+	text-align:center;
+
+
+}
+
+.big-container .material-title .showerrormsg,.codeRegister
+{
+	padding-top:30px;
+	width:80%;
+	margin:auto;
+	text-align:center;
+}
+
+.codeBox,.cancelBtn,.submitBtn
+{
+	margin-bottom:20px;
+}
+.cancelBtn,.submitBtn
+{
+	padding:20px 45px 20px 45px;
+}
+.cancelBtn
+{
+	text-decoration:none;
+	font-size:18px;
+	color: blue;
+}
+.submitBtn
+{
+	border:none;
+	font-size:18px;
+	color: blue;
+	background-color:#ffffff;
+}
+.submitBtn:hover{
+	color :white;
+	background-color:#000000;
+	cursor: pointer;
+}
+.cancelBtn:hover{
+	color :white;
+	background-color:#000000;
+}
+
+
+/************Confirm Attendance Css***********/
+
+.goHome
+{
+	padding:10px;
+	font-size:20px;
+	border:2px solid gray;
+	text-decoration:none;
+	border-radius:10px;
+	color:#000000;
+}
+
+.goHome:hover
+{
+	background-color:gray;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+
+
+/***********Student View their attendance Css***********/
+.rateAttendance,th,td
+{
+	width:50%;
+	margin:auto;
+}
+.rateAttendance
+{
+	border-collapse: separate;
+	border-spacing: 50px 0;
+}
+
+.rateAttendance td,th
+{
+	padding:10px;
+	font-size:20px;
+}
+
+.rateAttendance th{
+	background-color:#CA9D93;
+}
+
+
+
+
+.checkExamTable
+{
+	width:50%;
+	margin:auto;
+	padding-top:50px;
+}
+.checkExamTable td
+{
+	
+	padding:10px;
+	font-size:20px;
+	border:1px solid black;
+	border-radius:20px;
+	
+}
+
+.checkExamTable td:hover
+{
+	padding: 10px;
+	box-shadow: 0 0 20px #DB9EE7;
+	transition: box-shadow .3s;
+}
+
+
+.checkExamTable
+{
+    border-collapse: separate;
+	border-spacing: 20px;
+
+}
+
+.clickLink{
+	text-decoration:none;
+	color:black;
+}

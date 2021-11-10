@@ -1,0 +1,98 @@
+/************Content Css***********/
+.big-container .material-body{
+	width:auto;
+	height:auto;
+	margin-left:200px;
+	padding-top:50px;
+
+}
+
+
+
+
+/************Content Css Add Students and Teachers***********/
+
+table{
+	padding-top:20px;
+	border-collapse: collapse;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.45);
+	font-size:18px;
+}
+
+tr th{
+	background-color: #658A95;
+    color: #ffffff;	
+}
+tr{
+	background-color: #DBF6FF;
+    color: #000000;	
+}
+
+tr,th,td{
+    border-bottom: 1px solid #CAFBE8;
+	padding: 20px 50px 20px 50px;/*top right bottom left*/
+	text-align: center;
+	
+
+}
+table tr:not(:first-child){
+	cursor:pointer;
+	transition: all .25s ease-in-out;
+}
+
+table tr:not(:first-child):hover
+{
+	background-color : #A1D2E5;
+}
+.dltBtn
+{
+	text-decoration:none;
+	font-weight:bold;
+}
+	
+/************Form to add student and teacher****************/	
+.adduserform{
+	padding: 20px 50px 10px 50px ;
+	font-size:20px;
+}
+
+.adduserform .input1
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	border:none;
+	border-bottom: 3px solid #76D5FA;
+	background-color : #E4F9FF;
+	padding:5px 5px;
+
+}
+.name,.userName,.passWord,.course 
+{
+	margin:10px 0;
+
+}
+
+select
+{
+	font-size:18px;
+	padding:5px 5px;
+	background-color : #E4F9FF;
+	border: 2px solid #76D5FA;
+}
+.addBtn
+{
+	height:40px;
+	width:300px;
+	font-size:20px;
+	border:1px solid #76D5FA;
+	background-color : #E4F9FF;
+	padding:5px 5px;
+	cursor: pointer;
+}
+.addBtn:hover
+{
+	color: blue; 
+	background-color : white;
+	border:3px solid #76D5FA;
+}

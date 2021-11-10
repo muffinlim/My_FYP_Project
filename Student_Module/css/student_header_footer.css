@@ -1,0 +1,92 @@
+/*-----Body----*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body
+{
+	height:100%;
+	background-color : #ffffff;
+
+}
+
+
+/*******Top header CSS********/
+
+.head-container{
+	display:flex;
+	justify-content:center;
+	height:100px;
+	position:relative;
+	background-color : white;
+
+}
+.logo-box{
+	position:absolute;
+	left:0;
+}
+
+img{
+	height:99px;
+	width:115px;
+}
+
+.page-title{
+	width:70%;
+	text-align:center;
+	padding-top:30px;
+}
+h1{
+	margin:auto;
+}
+
+/*******Left Sidebar CSS********/
+.big-container{
+	position:relative;
+	display:flex;
+}
+.big-container .left-bar{
+	background-color: #505050;
+	width:150px;
+	height:100%;
+	position:fixed;
+	padding:30px 0;
+}
+.big-container .left-bar ul li{
+	padding:20px;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(225,225,225,0.05);
+}
+ul{
+	list-style-type: none;
+}
+.big-container .left-bar ul li a {
+	display: block;
+	text-decoration:none;
+	color:#FCFFD2;
+	font-size:20px;
+}
+.big-container .left-bar ul li:hover {
+	background: #4BC5DF;
+}
+.big-container .left-bar ul li:hover a {
+	color: #fff;
+}
+
+
+
+/*********footer of the page************/
+.footer-content
+{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+    line-height: 35px;
+    width: 100%;
+    text-align: center;
+    background:#E6E6E6;
+	color:#000;
+	font-weight:bold;
+}

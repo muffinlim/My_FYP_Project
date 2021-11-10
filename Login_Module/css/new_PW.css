@@ -1,0 +1,55 @@
+/**new Password container css**/
+.newPW-container{
+	padding:40px 40px;
+	justify-content:center;
+	display:flex;
+}
+.pwform{
+	padding:40px 40px;
+	width:500px;
+	height:80%;
+	border-radius:20px;
+	text-align: center;
+
+}
+.pwform .pw1,.pw2
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	outline:none;
+	padding:5px 5px;
+	border: none;
+	background-color : #89DDDB;
+	border-bottom: 1px solid blue;
+
+}
+
+.pwform .font
+{
+	font-size:20px;
+	margin:10px 0;
+}
+.pwform .font2
+{
+	font-size:20px;
+	margin:10px 0;
+}
+
+.pwform .pwChange
+{
+	height:40px;
+	width:300px;
+	font-size:20px;
+	border:1px solid blue;
+	background-color : #89DDDB;
+	margin-top:50px;
+	margin-bottom:20px;
+	padding:5px 5px;
+	cursor: pointer;
+}
+.pwChange:hover
+{
+	color: blue; 
+	background-color : white;
+}

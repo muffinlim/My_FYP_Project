@@ -1,0 +1,49 @@
+/************Profile Student Css***********/
+
+.profile{
+	margin:auto;
+	text-align:left;
+
+}
+
+.profile tr,th,td{
+	padding:20px 0 0 0;
+
+}
+.profile th{	
+	font-size:18px;
+}
+.txtbox
+{
+	height:40px;
+	width:200px;
+	font-size:18px;
+	border:none;
+	border-bottom: 2px solid #676C6C;
+	background-color : #DAE3E3;
+	padding:5px 5px;
+}
+p{
+	font-size:18px;
+	border-bottom: 2px solid #676C6C;
+	padding:5px 5px;
+
+
+}
+.upDateBtn
+{
+	text-decoration:none;
+	font-size:17px;
+	font-weight:bold;
+	border-radius:5px;
+	background-color : #DAE3E3;
+	border:2px solid #676C6C;
+	padding:5px;
+	width:200px;
+	
+}
+
+.upDateBtn:hover
+{
+	cursor:pointer;
+}

@@ -1,0 +1,56 @@
+/**reset password container css**/
+.resetPW-container{
+	padding:20px 40px;
+	justify-content:center;
+	display:flex;
+
+}
+.resetform{
+	padding:40px 40px;
+	width:500px;
+	height:80%;
+	border-radius:20px;
+	text-align: center;
+
+}
+.resetform .input1, .input2
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	padding:5px 5px;
+	border: none;
+	background-color : #89DDDB;
+	border-bottom: 1px solid blue;
+	
+}
+
+.resetform .font
+{
+	font-size:20px;
+	margin:10px 0;
+}
+.resetform .font2
+{
+	font-size:20px;
+	margin:10px 0;
+}
+
+.resetform .input3
+{
+	height:40px;
+	width:300px;
+	font-size:20px;
+	border:1px solid blue;
+	background-color : #89DDDB;
+	margin-top:40px;
+	margin-bottom:20px;
+	padding:5px 5px;
+	cursor: pointer;
+}
+.input3:hover
+{
+	color: blue; 
+	background-color : white;
+}
+

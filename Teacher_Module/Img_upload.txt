@@ -1,0 +1,171 @@
+
+
+
+
+<1 Format>
+<--Success-->
+<?php
+	$conn = mysqli_connect("localhost","root","","login");
+	
+	//insert image into database
+	if(isset($_POST['submit']))
+	{
+		$file = addslashes(file_get_contents($_FILES['userfile']['tmp_name']));
+		$query = "INSERT into tbl_image(name) VALUES ('$file')";
+		if(mysqli_query($conn,$query))
+		{
+			echo '<script>alert("Image Inserted into Database")</script>';
+		}
+		else{echo 'Failed';}
+	}
+	
+	
+	//display image
+	$query ="SELECT name FROM tbl_image ORDER by id DESC LIMIT 1";
+	$result = mysqli_query($conn,$query);
+	while($row = mysqli_fetch_array($result))
+	{
+		echo '<img class="phpImage" src="data:image/jpeg;base64,'.base64_encode($row['name']).'">';
+	}
+	
+	
+?>
+
+<script>
+	$(document).ready(function(){
+		$('#submit').click(function(){
+			var image_name = $('#image').val();
+			if(image_name=='')
+			{
+				alert("Please Select Iamge");
+				return false;
+			}
+			else
+			{
+				var extension = $('#image').val().split('.').pop().toLowerCase();
+				if(jQuery.inArray(extension,['gif','png','jpg','jpeg'])== -1)
+				{
+					alert("Invalid Image Files");
+					$('#image').val('');
+					return false;
+				}
+			}
+
+		});
+	});
+	
+	</script>
+	
+	
+	
+	
+	
+	
+<2 Format>
+<--Code Correct, File Upload Success BUt wont Show Image-->	
+	if(isset($_POST['submit']))
+{
+	//upload Image into database
+	$target_path="../file-Upload/";
+	$target_path = $target_path.basename($_FILES['userfile']['name']);
+	if(move_uploaded_file($_FILES['userfile']['tmp_name'], $target_path))
+	{
+		$conn = mysqli_connect("localhost","root","","login");
+		$sqlImg = "INSERT into upload_image(path) values ('".$target_path."')";
+		if($conn->query($sqlImg)==TRUE)
+		{
+			echo '<p>Succcessfully Added</p>';
+		}else
+		{
+			echo '<p>Failed, Try Again</p>';
+			echo 'Error:'.$sqlImg.$conn->error;
+		}
+		
+		
+		
+		
+		//display image 
+		$sql1="SELECT path FROM upload_image ORDER by id DESC LIMIT 1";
+		//this is to select the image which order id in descending order and print out only one image
+		
+		$result=$conn->query($sql1);
+		if($result->num_rows>0)
+		{
+			while($row = $result->fetch_assoc())
+			{
+				$path = $row['path'];
+				echo $path;
+				echo '<br><br>';
+?>
+				<img src="<?php$path;?>" alt="Images" height="500" width="500px">
+<?php
+			}
+		}
+		
+		
+		
+	}
+}
+
+
+
+
+<3 Format>
+<--File Upload Success But wont Display-->
+<?php
+	$conn = mysqli_connect("localhost","root","","login");
+	$statusMsg = '';
+	
+	// File upload path
+	$targetDir = "../file-Upload/";
+	$fileName = basename($_FILES['file']['name']);
+	$targetFilePath = $targetDir . $fileName;
+	$fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+	if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"]))
+	{
+		 // Allow certain file formats
+		$allowTypes = array('jpg','png','jpeg','gif','pdf');
+		if(in_array($fileType, $allowTypes)){
+			// Upload file to server
+			if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath))
+			{
+				 // Insert image file name into database
+				$insert = $conn->query("INSERT into images (file_name) VALUES ('".$fileName."')"); 
+				if($insert){
+					$statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+				}else{
+					$statusMsg = "File upload failed, please try again.";
+				}
+			}else{
+				$statusMsg = "Sorry, there was an error uploading your file.";
+			}
+		}else{
+			$statusMsg = 'Sorry, only JPG, JPEG, PNG, GIF, & PDF files are allowed to upload.';
+		}
+	}else{
+		$statusMsg = 'Please select a file to upload.';
+	}
+	
+	
+	// Display status message
+	echo $statusMsg;	
+?>
+
+<?php
+	// Connect the database
+	$conn = mysqli_connect("localhost","root","","login");
+
+	// Get images from the database
+	$query = $conn->query("SELECT * FROM images ORDER BY id DESC LIMIT 1");
+
+	if($query->num_rows > 0){
+		while($row = $query->fetch_assoc()){
+			$imageURL = '../file-Uploads/'.$row["file_name"];
+?>
+    <img src="<?php echo $imageURL; ?>" alt="" />
+<?php 	
+		}
+	}else{ 
+?>
+    <p>No image(s) found...</p>
+<?php } ?>

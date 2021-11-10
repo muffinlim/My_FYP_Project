@@ -1,0 +1,268 @@
+/************Content Css***********/
+.big-container .material-title{
+	width:100%;
+	margin-left:150px;
+
+}
+.big-container .material-title h2{
+	padding:30px;
+	text-align:center;
+	
+	background-color : #B8B8B8;
+	border-bottom: 3px solid #676C6C;
+}
+
+
+
+
+/************Profile Teacher Css***********/
+.profile{
+	margin:auto;
+	text-align:left;
+}
+
+.profile tr,th,td{
+	padding:20px 30px 0 30px;
+	
+}
+.profile th{	
+	font-size:18px;
+}
+.txtbox
+{
+	height:40px;
+	width:200px;
+	font-size:18px;
+	border:none;
+	border-bottom: 2px solid #676C6C;
+	background-color : #DAE3E3;
+	padding:5px 5px;
+}
+p{
+	font-size:18px;
+	border-bottom: 2px solid #676C6C;
+	padding:5px 5px;
+}
+.upDateBtn
+{
+	text-decoration:none;
+	font-size:17px;
+	font-weight:bold;
+	border-radius:5px;
+	background-color : #DAE3E3;
+	border:2px solid #676C6C;
+	padding:5px;
+	width:200px;
+	cursor:pointer;
+}
+
+
+
+/************ Teacher Page Css***********/
+.codeGenerator,.codeGeneratorForm
+{
+	padding:10px;
+	text-align:center;
+}
+
+.codeShow
+{
+	font-size:20px;
+	border-bottom:5px dotted  #EAD6F0;
+	width:200px;
+	margin:auto;
+}
+
+.codeGeneratorBtn
+{
+	margin-top:5px;
+	background-color:#EAD6F0;
+	color:black;
+	font-size:20px;
+	cursor:pointer;
+	padding:10px;
+	width:200px;
+	border-radius:10px;
+	box-shadow:0 0 15px #897095;
+}
+.codeGeneratorBtn:hover
+{
+	color:white;
+	background-color:#B76BF8;
+	border:1px solid #E77CF8;
+}
+.formUpload
+{
+	padding:5px;
+	text-align:center;
+	font-size:20px;
+}
+.uploadForm input
+{
+	font-size:15px;
+	padding:10px 5px 10px 5px;
+
+}
+
+.linktoAttendance
+{
+	padding:10px;
+	text-align:center;
+
+}
+
+.linktoAttendance a{
+	text-decoration:none;
+	font-size:20px;
+	padding:10px;
+	border:1px solid black;
+	border-radius:10px;
+
+}
+
+.linktoAttendance a:hover{
+	color:white;
+	background-color:#A7B8F7;
+	border:1px solid #4B6EEF;
+}
+
+
+
+/************ Teacher Check student attendance table Css***********/
+.teacheraddBtn
+{
+	color:red;
+	padding:10px;
+	border:1px solid black;
+	margin:15px auto 0 80%;
+	width:150px;
+	border-radius:10px;
+}
+
+.teacheraddBtn a
+{
+	text-decoration:none;
+	color:black;
+}
+
+.teacheraddBtn:hover
+{
+	background-color:#AE908A;
+	border:2px solid #A45343;
+
+}
+
+.viewStudenttable{
+	margin:50px auto 0 auto;
+	width:70%;
+	border-collapse: collapse;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.45);
+	font-size:18px;
+}
+.viewStudenttable tr th{
+	background-color: #658A95;
+    color: #ffffff;	
+}
+.viewStudenttable tr{
+	background-color: #DBF6FF;
+    color: #000000;	
+}
+
+.viewStudenttable tr,th,td{
+    border-bottom: 1px solid #34F7AC;
+	padding: 20px 30px 20px 30px;/*top right bottom left*/
+	text-align: center;
+}
+
+
+
+/************Form to add student and teacher****************/	
+.adduserform{
+	padding: 20px 50px 0 30px ;
+	font-size:20px;
+}
+.makeAlltogether
+{
+	display:flex;
+}
+.adduserform .input1
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	border:none;
+	border-bottom: 3px solid #76D5FA;
+	background-color : #E4F9FF;
+	padding:5px 5px;
+
+}
+.name,.userName,.passWord,.course 
+{
+	margin:10px 0;
+
+}
+
+select
+{
+	font-size:18px;
+	padding:5px 5px;
+	background-color : #E4F9FF;
+	border: 2px solid #76D5FA;
+}
+.addBtn
+{
+	height:40px;
+	width:300px;
+	font-size:20px;
+	border:1px solid #76D5FA;
+	background-color : #E4F9FF;
+	padding:5px 5px;
+	cursor: pointer;
+}
+.addBtn:hover
+{
+	color: blue; 
+	background-color : white;
+	border:3px solid #76D5FA;
+}
+
+
+
+
+/************ Teacher Check student attendance table Css***********/
+.addStudentstable{
+	border-collapse: collapse;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.45);
+	font-size:18px;
+	margin:20px auto 0 auto;
+	width:60%;
+}
+
+.addStudentstable tr th{
+	background-color: #658A95;
+    color: #ffffff;	
+}
+.addStudentstable tr{
+	background-color: #DBF6FF;
+    color: #000000;	
+}
+
+.addStudentstable tr:not(:first-child){
+	cursor:pointer;
+	transition: all .25s ease-in-out;
+}
+
+.addStudentstable tr:not(:first-child):hover
+{
+	background-color : #A1D2E5;
+}
+.dltBtn
+{
+	text-decoration:none;
+	font-weight:bold;
+}
+.addStudentstable tr,th,td{
+    border-bottom: 1px solid #34F7AC;
+	padding: 20px 30px 20px 30px;/*top right bottom left*/
+	text-align:center;
+}

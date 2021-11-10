@@ -1,0 +1,82 @@
+
+/**login page container css**/
+.login-container{
+	padding:20px 40px;
+	justify-content:center;
+	display:flex;
+}
+.loginform{
+	padding:40px 40px;
+	width:500px;
+	height:80%;
+	border-radius:20px;
+	text-align: center;
+
+}
+.loginform h2{
+	padding-bottom:10px;
+}
+.loginform .nameInput,.pwInput
+{
+	height:40px;
+	width:300px;
+	font-size:18px;
+	border:none;
+	background-color : #89DDDB;
+	border-bottom: 1px solid blue;
+	padding:5px 5px;
+
+}
+
+.loginform .font
+{
+	font-size:20px;
+	margin:10px 0;
+}
+.loginform .font2
+{
+	font-size:20px;
+	margin:10px 0;
+}
+
+.loginform .logInput
+{
+	height:40px;
+	width:300px;
+	font-size:20px;
+	border:1px solid blue;
+	background-color : #89DDDB;
+	margin-top:50px;
+	margin-bottom:20px;
+	padding:5px 5px;
+	cursor: pointer;
+}
+.logInput:hover
+{
+	color: blue; 
+	background-color : white;
+}
+
+.linkforgetpassword {
+	color: blue;
+	padding:0.5em;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

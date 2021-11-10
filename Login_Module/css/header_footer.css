@@ -1,0 +1,45 @@
+/*-----Body----*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body
+{
+	height:100%;
+	background-color : #89DDDB;
+
+}
+
+/*Login Module Header CSS*/
+
+.logo-box{
+	background-color : white;
+	padding:10px;
+	text-align:center;
+}
+
+img{
+	height:150px;
+	width:200px;
+}
+
+
+
+
+
+
+/*footer of the page*/
+.footer-content
+{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+    line-height: 35px;
+    width: 100%;
+    text-align: center;
+    background:radial-gradient(#90DBFF,#0079B3);
+	color:#000;
+	font-weight:bold;
+}
